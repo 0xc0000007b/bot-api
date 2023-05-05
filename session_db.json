@@ -1,0 +1,14 @@
+{
+  "sessions": [
+    {
+      "id": "2021181624:2021181624",
+      "data": {
+        "pizzaType": "Примавера",
+        "__scenes": {},
+        "pizzaPrice": 1100,
+        "customerName": "",
+        "totalPrice": null
+      }
+    }
+  ]
+}
