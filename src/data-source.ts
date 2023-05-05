@@ -6,7 +6,7 @@ export const AppDataSource = new DataSource({
   port: 3306,
   username: 'root',
   password: '',
-  database: 'blog',
+  database: 'orderz',
   entities: ['dist/**/*.entity{.ts,.js}'],
   migrationsRun: false,
   migrations: ['dist/**/db/migrations/**/*{.ts,.js}'],
