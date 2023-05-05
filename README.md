@@ -11,23 +11,27 @@
 
 
 </p></p>
+  
+## clonning the app 
+  
 ```bash
 $ git clone https://github.com/0xc0000007b/pizza-bot
 $ cd pizza-bot
- 
+ # for open this project use westorm 
 $ webstorm .
-or
+ # or vscode
 $ code .
- for open this project use westorm or vscode, or ther web dev core editor
+ # or other web dev core editor
 ```
 
+  
 after clonning you need instal neccessary packages. Using npm or yarn for these
 
 ## Installation 
 
 ```bash
 $ yarn install
-or npm
+# or npm
 $ npm install
 ```
 
@@ -36,17 +40,24 @@ $ npm install
 ```bash
 # development
 $ yarn run start
+# or
 $ npm  start 
 
 
 
 # watch mode
+# by using  npm
 $ npm run start --watch
-$ yarn run start:dev
 $ npm run start:dev
+  
+# by using yarn
+$ yarn run start:dev
 $ yarn run start
 
 # production mode
+# by using npm
+$ npm run start:prod
+# by using yarn  
 $ yarn run start:prod
 ```
 
@@ -62,19 +73,23 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
-IMPORTANT INFORMATION
 
-I USE LOCAL DATABASE
-I YOU WANT TO USE DATABASE, USE XAMMP or PgAdmin, or MongoDB Compass for creating database locally
-
+<span style="color:red;font-weight:700;font-size:20px">
+ I USE LOCAL DATABASE
+I YOU WANT TO USE DATABASE, USE XAMMP or PgAdmin, or MongoDB Compass for creating database locally</span>
 additional link
 
 <a href="https://www.apachefriends.org/ru/">Xammp</a>
 <a href="https://www.pgadmin.org">PgAdmin</a>
 <a href="https://www.mongodb.com/try/download/compass">MongoDB Compoass</a>
 
-THE MOST IMPORTANT ATTEMPTION
-i do not publish my database to this repository. you must create your own locally database copy 
+
+   THE MOST IMPORTANT ATTEMPTION
+   I do not publish my database to this repository.
+   You must create your own locally database copy 
+
+
+
 
 with Xammp
 1. open xammp
