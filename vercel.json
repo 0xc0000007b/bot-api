@@ -1,6 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "nest build",
   "build": {
+
     "src": "src/main.ts",
     "use": "@vercel/node"
   },
