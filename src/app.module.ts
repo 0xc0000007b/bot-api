@@ -4,13 +4,13 @@ import { AppController } from './app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { DbService } from './db.service';
-import { join } from 'path';
+import { token } from './bot/utils/config';
 import { Pizza } from './entity/pizza.entity';
 import { Order } from './entity/order.entity';
 
 import { TelegrafModule } from 'nestjs-telegraf';
 import * as LocalSession from 'telegraf-session-local';
-import { TOKEN } from './bot/utils/config';
+
 import { AppUpdate } from './bot/app.update';
 
 import { BotModule } from './bot/bot.module';
@@ -23,20 +23,20 @@ const sessions = new LocalSession({
 @Module({
   imports: [
     TelegrafModule.forRoot({
-      token: TOKEN,
+      token: token,
       middlewares: [sessions.middleware()],
     }),
     TypeOrmModule.forFeature([Pizza, Order, OrderItem, Topping]),
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: 'sql7.freesqldatabase.com',
       port: 3306,
-      username: 'root',
-      password: '',
-      database: 'orderz',
+      username: 'sql7618392',
+      password: 'cXCrZ83wtZ',
+      database: 'sql7618392',
       dropSchema: false,
       logging: true,
-      synchronize: false,
+      synchronize: true,
       entities: ['./dist/**/*.entity.{js,ts}'],
       migrations: ['./dist/**/*.migration.{js,ts}'],
       migrationsRun: false,
